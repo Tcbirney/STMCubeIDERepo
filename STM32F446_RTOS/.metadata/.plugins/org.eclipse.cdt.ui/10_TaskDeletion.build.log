@@ -1,0 +1,10 @@
+15:09:54 **** Incremental Build of configuration Debug for project 10_TaskDeletion ****
+make -j8 all 
+arm-none-eabi-size  10_TaskDeletion.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20976	     16	  20504	  41496	   a218	10_TaskDeletion.elf
+Finished building: default.size.stdout
+ 
+
+15:09:54 Build Finished. 0 errors, 0 warnings. (took 360ms)
+

@@ -1,0 +1,13 @@
+1728587401631	Delete resource '3_bsrr_gpio2'
+1728588983342	Delete resource '4_bsrr_input/Debug/2_GPIO_output.elf'
+1728589030919	Delete 2 resources
+1728589097266	Delete resource '4_bsrr_input'
+1728589121949	Delete resource '0_led_toggle_addr2'
+1728676134441	Delete 2 resources
+1728678384644	Delete 4 resources
+1728678398358	Delete 2 resources
+1728679630649	Delete resource '6_printf_uart/5_uart_tx Debug.launch'
+1728680048426	Delete resource '6_printf_uart/Inc/uart.h'
+1728683330450	Delete 2 resources
+1728766897568	Delete resource '9_adc/8_uart_rx Debug.launch'
+1728766905373	Delete resource '9_adc/Debug/8_uart_rx.elf'

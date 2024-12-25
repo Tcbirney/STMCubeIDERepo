@@ -1,0 +1,10 @@
+18:00:36 **** Incremental Build of configuration Debug for project 16_ComplexQueueData ****
+make -j8 all 
+arm-none-eabi-size  16_ComplexQueueData.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25168	    108	  20828	  46104	   b418	16_ComplexQueueData.elf
+Finished building: default.size.stdout
+ 
+
+18:00:37 Build Finished. 0 errors, 0 warnings. (took 380ms)
+

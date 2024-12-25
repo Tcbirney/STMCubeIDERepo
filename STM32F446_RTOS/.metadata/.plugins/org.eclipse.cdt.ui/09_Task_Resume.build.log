@@ -1,0 +1,10 @@
+16:23:33 **** Incremental Build of configuration Debug for project 09_Task_Resume ****
+make -j8 all 
+arm-none-eabi-size  09_Task_Resume.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21296	     16	  20496	  41808	   a350	09_Task_Resume.elf
+Finished building: default.size.stdout
+ 
+
+16:23:33 Build Finished. 0 errors, 0 warnings. (took 366ms)
+

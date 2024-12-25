@@ -1,0 +1,16 @@
+18:59:51 **** Incremental Build of configuration Debug for project 10_adc_continuous_conversion ****
+make -j8 all 
+arm-none-eabi-gcc -o "10_adc_continuous_conversion.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tcbir\OneDrive\Desktop\STM32F446\10_adc_continuous_conversion\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_adc_continuous_conversion.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 10_adc_continuous_conversion.elf
+ 
+arm-none-eabi-size  10_adc_continuous_conversion.elf 
+arm-none-eabi-objdump -h -S 10_adc_continuous_conversion.elf  > "10_adc_continuous_conversion.list"
+   text	   data	    bss	    dec	    hex	filename
+   5496	     92	   1908	   7496	   1d48	10_adc_continuous_conversion.elf
+Finished building: default.size.stdout
+ 
+Finished building: 10_adc_continuous_conversion.list
+ 
+
+18:59:52 Build Finished. 0 errors, 0 warnings. (took 430ms)
+

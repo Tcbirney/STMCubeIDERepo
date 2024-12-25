@@ -1,0 +1,10 @@
+23:01:31 **** Incremental Build of configuration Debug for project 15_InputINterrupt ****
+make -j8 all 
+arm-none-eabi-size  15_InputINterrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5528	     92	   1900	   7520	   1d60	15_InputINterrupt.elf
+Finished building: default.size.stdout
+ 
+
+23:01:32 Build Finished. 0 errors, 0 warnings. (took 215ms)
+

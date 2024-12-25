@@ -1,0 +1,20 @@
+15:09:48 **** Build of configuration Debug for project 10_TaskDeletion ****
+make -j8 all 
+arm-none-eabi-gcc -o "10_TaskDeletion.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tcbir\Documents\STM32F446_RTOS\10_TaskDeletion\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_TaskDeletion.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 10_TaskDeletion.elf
+ 
+arm-none-eabi-size  10_TaskDeletion.elf 
+arm-none-eabi-objdump -h -S 10_TaskDeletion.elf  > "10_TaskDeletion.list"
+   text	   data	    bss	    dec	    hex	filename
+  20976	     16	  20504	  41496	   a218	10_TaskDeletion.elf
+Finished building: default.size.stdout
+ 
+Finished building: 10_TaskDeletion.list
+ 
+15:09:54 **** Incremental Build of configuration Debug for project 10_TaskDeletion ****
+make -j8 all 
+arm-none-eabi-size  10_TaskDeletion.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20976	     16	  20504	  41496	   a218	10_TaskDeletion.elf
+Finished building: default.size.stdout
+ 

@@ -1,0 +1,21 @@
+01:41:20 **** Incremental Build of configuration Debug for project 03_TaskParameters ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'vLedControllerTask':
+../Core/Src/main.c:97:43: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   97 |                 HAL_GPIO_TogglePin(GPIOD, (uint16_t)pvParameters);
+      |                                           ^
+arm-none-eabi-gcc -o "03_TaskParameters.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tcbir\OneDrive\Desktop\STM32F446_RTOS\03_TaskParameters\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="03_TaskParameters.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 03_TaskParameters.elf
+ 
+arm-none-eabi-size  03_TaskParameters.elf 
+arm-none-eabi-objdump -h -S 03_TaskParameters.elf  > "03_TaskParameters.list"
+   text	   data	    bss	    dec	    hex	filename
+  20720	     32	  20480	  41232	   a110	03_TaskParameters.elf
+Finished building: default.size.stdout
+ 
+Finished building: 03_TaskParameters.list
+ 
+
+01:41:21 Build Finished. 0 errors, 1 warnings. (took 1s.236ms)
+

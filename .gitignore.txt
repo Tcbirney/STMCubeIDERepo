@@ -1,0 +1,14 @@
+# STM32CubeIDE build files
+**/Debug/
+**/Release/
+**/.settings/
+**/*.launch
+
+# CubeMX generated files (regenerate from .ioc file)
+**/.cproject
+**/.project
+
+# Backup and temporary files
+**/*.swp
+**/*.bak
+**/*.tmp
